@@ -1,0 +1,82 @@
+Wikimedia Commons crop image credits
+Full-resolution originals are marked "original". Where Wikimedia Commons rate-limited the original download, a high-resolution Commons JPEG thumbnail was used; Commons returned standard thumbnail widths of 1280 or 1920 px.
+
+rice.jpg
+Title: Blond and green rice fields.jpg
+Author: Basile Morin
+License: CC BY-SA 4.0
+Source: https://commons.wikimedia.org/wiki/File:Blond_and_green_rice_fields.jpg
+Local file: original
+Dimensions: 6249 x 3515; bytes: 20000900
+
+wheat.jpg
+Title: Ripe wheat on Menokin Road.jpg
+Author: Nyttend
+License: Public domain
+Source: https://commons.wikimedia.org/wiki/File:Ripe_wheat_on_Menokin_Road.jpg
+Local file: original
+Dimensions: 6016 x 4000; bytes: 5768865
+
+maize.jpg
+Title: 0538Maize fields in Bulacan 03.jpg
+Author: JFVelasquez Floro
+License: CC0
+Source: https://commons.wikimedia.org/wiki/File:0538Maize_fields_in_Bulacan_03.jpg
+Local file: original
+Dimensions: 4608 x 3456; bytes: 7544102
+
+sugarcane.jpg
+Title: Sugarcane field of Kachirapalayam.jpg
+Author: Thamizhpparithi Maari
+License: CC BY-SA 4.0
+Source: https://commons.wikimedia.org/wiki/File:Sugarcane_field_of_Kachirapalayam.jpg
+Local file: Commons JPEG thumbnail
+Dimensions: 1920 x 1440; bytes: 642056
+
+cotton.jpg
+Title: Cotton plant from Imperial, California, ca.1925 (CHS-2694).jpg
+Author: Unknown author Unknown author
+License: Public domain
+Source: https://commons.wikimedia.org/wiki/File:Cotton_plant_from_Imperial%2C_California%2C_ca.1925_(CHS-2694).jpg
+Local file: Commons JPEG thumbnail
+Dimensions: 1920 x 2532; bytes: 1177625
+
+potato.jpg
+Title: Digging up potatoes for Christmas lunch.jpg
+Author: Luigi Guarino
+License: CC BY 2.0
+Source: https://commons.wikimedia.org/wiki/File:Digging_up_potatoes_for_Christmas_lunch.jpg
+Local file: Commons JPEG thumbnail
+Dimensions: 1280 x 960; bytes: 327553
+
+tomato.jpg
+Title: Solanum lycopersicum 'Brandywine Red' (tomato), ripe fruits on the plant (SaatPilot).jpg
+Author: Steffen Bauer ( www.saatpilot.de )
+License: CC BY 4.0
+Source: https://commons.wikimedia.org/wiki/File:Solanum_lycopersicum_%27Brandywine_Red%27_(tomato)%2C_ripe_fruits_on_the_plant_(SaatPilot).jpg
+Local file: Commons JPEG thumbnail
+Dimensions: 1920 x 1405; bytes: 504812
+
+soybean.jpg
+Title: NRCSIA99680 - Iowa (3981)(NRCS Photo Gallery).jpg
+Author: Photo by Lynn Betts, USDA Natural Resources Conservation Service.
+License: Public domain
+Source: https://commons.wikimedia.org/wiki/File:NRCSIA99680_-_Iowa_(3981)(NRCS_Photo_Gallery).jpg
+Local file: Commons JPEG thumbnail
+Dimensions: 1313 x 1980; bytes: 3436852
+
+groundnut.jpg
+Title: A group of women harvesting groundnuts.jpg
+Author: Peter Andresile
+License: CC BY-SA 4.0
+Source: https://commons.wikimedia.org/wiki/File:A_group_of_women_harvesting_groundnuts.jpg
+Local file: Commons JPEG thumbnail
+Dimensions: 1920 x 1440; bytes: 1147209
+
+banana.jpg
+Title: Banana bunch growing in a banana tree plantation on Tenerife, Spain (48225283136).jpg
+Author: dronepicr
+License: CC BY 2.0
+Source: https://commons.wikimedia.org/wiki/File:Banana_bunch_growing_in_a_banana_tree_plantation_on_Tenerife%2C_Spain_(48225283136).jpg
+Local file: Commons JPEG thumbnail
+Dimensions: 1920 x 2886; bytes: 900447

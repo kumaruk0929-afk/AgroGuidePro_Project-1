@@ -1,0 +1,278 @@
+[
+  {
+    "id": "rice",
+    "name": "Rice",
+    "season": "kharif",
+    "soil": "clay",
+    "n": 80,
+    "p": 40,
+    "k": 40,
+    "people": 6,
+    "yieldPerAcre": "22–27 quintals",
+    "waterRequirement": "High (Requires standing water)",
+    "soilScore": 9,
+    "image": "images/rice.jpg",
+    "pests": [
+      "Stem Borer",
+      "Leaf Folder",
+      "Brown Plant Hopper"
+    ],
+    "diseases": [
+      "Blast",
+      "Sheath Blight",
+      "Bacterial Leaf Blight"
+    ],
+    "timeline": {
+      "sowing": "June – July",
+      "irrigation": "Requires frequent flooding",
+      "fertilizer": "Basal dose + top dressing at 25 & 50 days",
+      "harvest": "October – November"
+    },
+    "notes": "Grows best in areas with abundant water. Avoid saline soils."
+  },
+  {
+    "id": "wheat",
+    "name": "Wheat",
+    "season": "rabi",
+    "soil": "loam",
+    "n": 100,
+    "p": 50,
+    "k": 40,
+    "people": 5,
+    "yieldPerAcre": "18–22 quintals",
+    "waterRequirement": "Medium (4–5 irrigations)",
+    "soilScore": 8,
+    "image": "images/wheat.jpg",
+    "pests": [
+      "Aphids",
+      "Termites"
+    ],
+    "diseases": [
+      "Rust",
+      "Smut"
+    ],
+    "timeline": {
+      "sowing": "November",
+      "irrigation": "Every 20–25 days",
+      "fertilizer": "Split application of NPK",
+      "harvest": "March – April"
+    },
+    "notes": "Loam soil with good drainage is ideal."
+  },
+  {
+    "id": "maize",
+    "name": "Maize",
+    "season": "kharif",
+    "soil": "loam",
+    "n": 60,
+    "p": 30,
+    "k": 30,
+    "people": 3,
+    "yieldPerAcre": "18–25 quintals",
+    "waterRequirement": "Moderate",
+    "soilScore": 8,
+    "image": "images/maize.jpg",
+    "pests": [
+      "Stem Borer"
+    ],
+    "diseases": [
+      "Downy Mildew"
+    ],
+    "timeline": {
+      "sowing": "June",
+      "irrigation": "30–40 days interval",
+      "fertilizer": "Split N application",
+      "harvest": "September – October"
+    },
+    "notes": "Avoid waterlogging."
+  },
+  {
+    "id": "sugarcane",
+    "name": "Sugarcane",
+    "season": "annual",
+    "soil": "loam",
+    "n": 140,
+    "p": 60,
+    "k": 60,
+    "people": 10,
+    "yieldPerAcre": "30–40 tons",
+    "waterRequirement": "Very High",
+    "soilScore": 7,
+    "image": "images/sugarcane.jpg",
+    "pests": [
+      "Early Shoot Borer"
+    ],
+    "diseases": [
+      "Red Rot"
+    ],
+    "timeline": {
+      "sowing": "February – March",
+      "irrigation": "Frequent, heavy",
+      "fertilizer": "3 split doses",
+      "harvest": "January – March (next year)"
+    },
+    "notes": "Requires long duration & high water availability."
+  },
+  {
+    "id": "cotton",
+    "name": "Cotton",
+    "season": "kharif",
+    "soil": "black",
+    "n": 60,
+    "p": 30,
+    "k": 30,
+    "people": 4,
+    "yieldPerAcre": "10–12 quintals",
+    "waterRequirement": "Moderate",
+    "soilScore": 9,
+    "image": "images/cotton.jpg",
+    "pests": [
+      "Bollworm"
+    ],
+    "diseases": [
+      "Wilt"
+    ],
+    "timeline": {
+      "sowing": "June – July",
+      "irrigation": "Once every 30 days",
+      "fertilizer": "NPK in 2 splits",
+      "harvest": "November – January"
+    },
+    "notes": "Prefers black cotton soil for moisture retention."
+  },
+  {
+    "id": "potato",
+    "name": "Potato",
+    "season": "rabi",
+    "soil": "loam",
+    "n": 90,
+    "p": 45,
+    "k": 45,
+    "people": 7,
+    "yieldPerAcre": "80–100 quintals",
+    "waterRequirement": "Medium",
+    "soilScore": 8,
+    "image": "images/potato.jpg",
+    "pests": [
+      "Cutworm"
+    ],
+    "diseases": [
+      "Late Blight"
+    ],
+    "timeline": {
+      "sowing": "October – November",
+      "irrigation": "7–8 irrigations",
+      "fertilizer": "Basal + top dressing",
+      "harvest": "February – March"
+    },
+    "notes": "Requires loose soil for tuber expansion."
+  },
+  {
+    "id": "tomato",
+    "name": "Tomato",
+    "season": "all",
+    "soil": "loam",
+    "n": 50,
+    "p": 25,
+    "k": 25,
+    "people": 4,
+    "yieldPerAcre": "80–120 quintals",
+    "waterRequirement": "Medium",
+    "soilScore": 8,
+    "image": "images/tomato.jpg",
+    "pests": [
+      "Fruit Borer"
+    ],
+    "diseases": [
+      "Leaf Curl"
+    ],
+    "timeline": {
+      "sowing": "Any season",
+      "irrigation": "Weekly",
+      "fertilizer": "NPK + micronutrients",
+      "harvest": "60–80 days after transplanting"
+    },
+    "notes": "Mulching improves yield."
+  },
+  {
+    "id": "soybean",
+    "name": "Soybean",
+    "season": "kharif",
+    "soil": "black",
+    "n": 20,
+    "p": 40,
+    "k": 20,
+    "people": 3,
+    "yieldPerAcre": "8–10 quintals",
+    "waterRequirement": "Low",
+    "soilScore": 8,
+    "image": "images/soybean.jpg",
+    "pests": [
+      "Girdle Beetle"
+    ],
+    "diseases": [
+      "Rust"
+    ],
+    "timeline": {
+      "sowing": "June",
+      "irrigation": "Minimal",
+      "fertilizer": "Low N, medium P",
+      "harvest": "October"
+    },
+    "notes": "Excellent nitrogen-fixing crop."
+  },
+  {
+    "id": "groundnut",
+    "name": "Groundnut",
+    "season": "kharif",
+    "soil": "sandy",
+    "n": 20,
+    "p": 40,
+    "k": 20,
+    "people": 4,
+    "yieldPerAcre": "6–10 quintals",
+    "waterRequirement": "Low",
+    "soilScore": 7,
+    "image": "images/groundnut.jpg",
+    "pests": [
+      "Leaf Miner"
+    ],
+    "diseases": [
+      "Tikka Disease"
+    ],
+    "timeline": {
+      "sowing": "June – July",
+      "irrigation": "Minimal",
+      "fertilizer": "Moderate P",
+      "harvest": "October – November"
+    },
+    "notes": "Prefers light sandy soils."
+  },
+  {
+    "id": "banana",
+    "name": "Banana",
+    "season": "all",
+    "soil": "loam",
+    "n": 200,
+    "p": 60,
+    "k": 200,
+    "people": 12,
+    "yieldPerAcre": "15–20 tons",
+    "waterRequirement": "High",
+    "soilScore": 9,
+    "image": "images/banana.jpg",
+    "pests": [
+      "Rhizome Weevil"
+    ],
+    "diseases": [
+      "Panama Wilt"
+    ],
+    "timeline": {
+      "sowing": "Throughout year",
+      "irrigation": "2–3 times weekly",
+      "fertilizer": "Heavy feeding required",
+      "harvest": "11–12 months after planting"
+    },
+    "notes": "Requires warm temperatures and good drainage."
+  }
+]

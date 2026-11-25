@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173d2b">
+  <meta name="description" content="Estimate crop fertilizer quantities, manpower and input costs with AgroGuide Pro.">
+  <title>Farm Calculators | AgroGuide Pro</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="AgroGuide Pro home">
+        <span class="brand-mark" aria-hidden="true">AG</span>
+        <span class="brand-copy"><span class="brand-name">AgroGuide <span>Pro</span></span><span class="brand-tagline">Smart agriculture portal</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mainNav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"></path></svg>
+      </button>
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+        <a href="index.html">Home</a><a href="crops.html">Crops</a><a href="calculator.html" aria-current="page">Calculator</a><a href="soil-checker.html">Soil Checker</a><a href="season-planner.html">Season Planner</a><a href="crop-comparison.html">Compare</a><a href="farming-tools.html">Farming Tools</a><a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page-shell">
+    <section class="page-heading">
+      <p class="eyebrow">Farm planning</p>
+      <h1>Fertilizer, manpower &amp; cost calculators</h1>
+      <p>Choose a crop and land area to estimate the NPK quantities, manpower and costs from the existing project data.</p>
+    </section>
+
+    <p class="notice" id="quickCalcNotice" aria-live="polite">Quick Calc from a crop card can bring its crop selection to this page.</p>
+
+    <div class="calculator-grid section">
+      <section class="form-panel" aria-labelledby="npkTitle">
+        <p class="eyebrow">Quick calculator</p>
+        <h2 id="npkTitle">Fertilizer &amp; manpower</h2>
+        <p>Get the crop's estimated NPK quantities and people required for your selected area.</p>
+        <div class="form-fields">
+          <div class="field field-wide">
+            <label for="calcCrop">Crop</label>
+            <select id="calcCrop" required><option value="">Loading crop data...</option></select>
+          </div>
+          <div class="field">
+            <label for="calcArea">Area</label>
+            <input id="calcArea" type="number" placeholder="Enter land size" min="0.1" step="0.1" inputmode="decimal">
+          </div>
+          <div class="field">
+            <label for="calcUnit">Area unit</label>
+            <select id="calcUnit">
+              <option value="acre">Acre</option>
+              <option value="hectare">Hectare</option>
+            </select>
+          </div>
+        </div>
+        <button id="calcBtn" class="btn" type="button">Calculate NPK &amp; manpower</button>
+        <div id="calcResult" class="result" aria-live="polite">Your estimate will appear here.</div>
+        <p class="helper-text">The calculator uses the crop's stored NPK and people-per-acre values. Results are estimates.</p>
+      </section>
+
+      <section class="form-panel" aria-labelledby="costTitle">
+        <p class="eyebrow">Input planning</p>
+        <h2 id="costTitle">Fertilizer cost estimator</h2>
+        <p>Enter local input and labour costs to estimate expenses for the crop and area selected alongside.</p>
+        <div class="form-fields">
+          <div class="field">
+            <label for="costN">Nitrogen cost (₹ / kg)</label>
+            <input type="number" id="costN" placeholder="e.g. 25" min="0" step="0.01" inputmode="decimal">
+          </div>
+          <div class="field">
+            <label for="costP">Phosphorus cost (₹ / kg)</label>
+            <input type="number" id="costP" placeholder="e.g. 55" min="0" step="0.01" inputmode="decimal">
+          </div>
+          <div class="field">
+            <label for="costK">Potassium cost (₹ / kg)</label>
+            <input type="number" id="costK" placeholder="e.g. 50" min="0" step="0.01" inputmode="decimal">
+          </div>
+          <div class="field">
+            <label for="labourCost">Labour cost per person/day (₹)</label>
+            <input type="number" id="labourCost" placeholder="e.g. 400" min="0" step="0.01" inputmode="decimal">
+          </div>
+          <div class="field field-wide">
+            <label for="labourDays">Working days</label>
+            <input type="number" id="labourDays" placeholder="e.g. 10" min="0" step="1" inputmode="numeric">
+          </div>
+        </div>
+        <button id="costCalcBtn" class="btn" type="button">Calculate estimated costs</button>
+        <div id="costResult" class="result" aria-live="polite">Cost breakdown will appear here.</div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <div class="footer-brand"><a class="brand" href="index.html" aria-label="AgroGuide Pro home"><span class="brand-mark" aria-hidden="true">AG</span><span class="brand-copy"><span class="brand-name">AgroGuide <span>Pro</span></span><span class="brand-tagline">Smart agriculture portal</span></span></a><p>A student project bringing crop information and farm-planning tools together in a responsive portal.</p></div>
+      <div class="footer-col"><h2>Explore</h2><div class="footer-links"><a href="crops.html">Crop guide</a><a href="calculator.html">Calculator</a><a href="soil-checker.html">Soil checker</a><a href="season-planner.html">Season planner</a><a href="crop-comparison.html">Compare crops</a><a href="farming-tools.html">Farming tools</a></div></div>
+      <div class="footer-col"><h2>About this project</h2><p>Built by Priyansu Kumar Soni, Harsh Kumar and Arun Kushwaha as a BCA final-year minor project.</p></div>
+    </div>
+    <div class="footer-bottom"><div class="container"><p>AgroGuide Pro &copy; <span data-current-year>2026</span></p><p>Demonstration information only; confirm decisions with local agricultural experts.</p></div></div>
+  </footer>
+
+  <div class="modal" id="cropModal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalHeading">
+      <button class="modal-close" id="modalClose" type="button" aria-label="Close crop details">&times;</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+</body>
+</html>
