@@ -1,12 +1,15 @@
-AgroGuide Pro - project code extracted/reused from Minor Project Report PDF
+AgroGuide Pro
 
-Run:
-1. Keep index.html, style.css, script.js and data/images folders in place.
-2. Open this folder with VS Code and use Live Server (recommended), or run a local server.
-   Python: python -m http.server 8000
-3. Open http://localhost:8000 in browser.
+Run the website:
+1. Open this project folder in VS Code.
+2. Start index.html with the Live Server extension.
+3. Use the navigation to open the crop guide, calculators, soil checker,
+   season planner, crop comparison, farming tools and About pages.
 
-Important:
-- Code in the report is reused and split into separate files.
-- The report describes crop image assets, but the actual crop photographs were not included as code in the PDF. Generic placeholders are supplied so the image paths load; replace them with real crop photos if desired.
-- Dataset/code values are for project demonstration and should not be treated as agronomic advice.
+The website uses the local data/crops.json crop dataset and images in the
+images folder. Crop photographs are credited in images/image-credits.txt.
+No build step or external runtime dependencies are required.
+
+The calculators and crop recommendations use demonstration project data.
+They are for learning and basic planning only, not a substitute for local
+agricultural advice.
