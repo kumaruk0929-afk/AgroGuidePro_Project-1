@@ -1,167 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#173d2b">
-  <meta name="description" content="Explore crop information, soil suitability, season planning and farm calculators with AgroGuide Pro.">
-  <title>AgroGuide Pro | Smart Agriculture Portal</title>
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AgroGuide Pro — Smart Agriculture Portal</title>
+
+  <!-- Replace with your own favicon if you want -->
+  <link rel="icon" href="images/favicon.png" type="image/png">
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="AgroGuide Pro home">
-        <span class="brand-mark" aria-hidden="true">AG</span>
-        <span class="brand-copy">
-          <span class="brand-name">AgroGuide <span>Pro</span></span>
-          <span class="brand-tagline">Smart agriculture portal</span>
-        </span>
-      </a>
-      <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mainNav">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-          <path d="M4 6h16M4 12h16M4 18h16"></path>
-        </svg>
-      </button>
-      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
-        <a href="index.html" aria-current="page">Home</a>
-        <a href="crops.html">Crops</a>
-        <a href="calculator.html">Calculator</a>
-        <a href="soil-checker.html">Soil Checker</a>
-        <a href="season-planner.html">Season Planner</a>
-        <a href="crop-comparison.html">Compare</a>
-        <a href="farming-tools.html">Farming Tools</a>
-        <a href="about.html">About</a>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container header-flex">
+      <div class="brand">
+        <h1 class="logo">AgroGuide <span>Pro</span></h1>
+        <p class="tagline">Smart Agriculture Information & Planning</p>
+      </div>
+
+      <nav class="main-nav">
+        <a href="#home">Home</a>
+        <a href="#crops">Crops</a>
+        <a href="#calculator">Calculator</a>
+<a href="#soil-checker">Soil Checker</a>
+        <a href="#season">Season Planner</a>
+        <a href="#compare">Compare</a>
+        <a href="#tools">Tools</a>
       </nav>
     </div>
   </header>
 
-  <main>
-    <section class="container hero-section" aria-labelledby="homeTitle">
-      <div class="hero-content">
-        <p class="eyebrow">Practical crop planning, in one place</p>
-        <h1 id="homeTitle">Plan smarter.<br>Farm better.</h1>
-        <p>Welcome to AgroGuide Pro, a clear and practical portal for exploring crop information, checking soil fit, planning seasons and estimating farm inputs.</p>
-        <div class="hero-actions">
-          <a class="btn" href="crops.html">Explore crops <span aria-hidden="true">&rarr;</span></a>
-          <a class="btn btn-light" href="calculator.html">Open calculators</a>
+  <!-- MAIN -->
+  <main class="container">
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-left">
+        <h2>Plan smarter. Farm better.</h2>
+        <p>
+          AgroGuide Pro combines crop information, season planning, fertilizer & manpower estimators,
+          soil suitability checks, crop comparison tools and practical farming tips — all in one accessible portal.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#crops" class="btn">Explore Crops</a>
+          <a href="#calculator" class="btn btn-outline">Open Calculator</a>
         </div>
-        <div class="hero-proof" aria-label="Portal highlights">
-          <span>10 crop profiles</span>
-          <span>Local crop photographs</span>
-          <span>Planning tools in one portal</span>
+      </div>
+
+      <div class="hero-right">
+<!-- decorative / placeholder image -->
+        <img src="images/hero-farm.png" alt="Farming" />
+      </div>
+    </section>
+
+    <!-- CROPS GRID -->
+    <section id="crops" class="section">
+      <h2>Popular Crops</h2>
+      <p class="muted">Click "View Details" to see timeline, pests & disease tips, water needs and more.</p>
+      <div id="cropGrid" class="grid"></div>
+    </section>
+
+    <!-- CALCULATOR -->
+    <section id="calculator" class="section">
+      <h2>Fertilizer & Manpower Calculator</h2>
+
+      <div class="calc-grid">
+        <div class="card calc">
+
+          <label>Crop:
+            <select id="calcCrop"></select>
+          </label>
+
+          <label>Area:
+            <input type="number" id="calcArea" placeholder="Enter land size" min="0.1" step="0.1" />
+          </label>
+<label>Unit:
+            <select id="calcUnit">
+              <option value="acre">Acre</option>
+              <option value="hectare">Hectare</option>
+            </select>
+          </label>
+
+          <button id="calcBtn" class="btn">Calculate NPK & Manpower</button>
+
+          <pre id="calcResult" class="result"></pre>
+        </div>
+
+        <div class="card cost">
+          <h3>Fertilizer Cost & Expense Estimator</h3>
+
+          <label>Cost of Nitrogen (₹ / kg):
+            <input type="number" id="costN" placeholder="e.g. 25" />
+          </label>
+          <label>Cost of Phosphorus (₹ / kg):
+            <input type="number" id="costP" placeholder="e.g. 55" />
+          </label>
+          <label>Cost of Potassium (₹ / kg):
+            <input type="number" id="costK" placeholder="e.g. 50" />
+          </label>
+
+          <h4>Labour</h4>
+          <label>Cost per labour per day (₹):
+<input type="number" id="labourCost" placeholder="e.g. 400" />
+          </label>
+          <label>Number of working days:
+            <input type="number" id="labourDays" placeholder="e.g. 10" />
+          </label>
+
+          <button id="costCalcBtn" class="btn">Calculate Cost</button>
+
+          <div id="costResult" class="result"></div>
         </div>
       </div>
     </section>
 
-    <div class="container page-shell">
-      <section class="section" aria-labelledby="featuredTitle">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Crop library</p>
-            <h2 id="featuredTitle">Explore featured crops</h2>
-            <p>Browse crop seasons, soil preferences and practical field notes from the existing crop guide.</p>
-          </div>
-          <a class="text-link" href="crops.html">View all 10 crops <span aria-hidden="true">&rarr;</span></a>
-        </div>
-        <div id="featuredCropGrid" class="grid" aria-live="polite"></div>
-      </section>
+    <!-- SOIL SUITABILITY -->
+    <section id="soil-checker" class="section">
+      <h2>Soil Suitability Checker</h2>
+      <p class="muted">Choose soil and season to view recommended crops and soil suitability scores.</p>
 
-      <section class="section" aria-labelledby="featuresTitle">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Tools for your next decision</p>
-            <h2 id="featuresTitle">Everything connected to your crop plan</h2>
-            <p>Use the project’s existing dataset and calculators to compare practical options.</p>
-          </div>
-        </div>
-        <div class="feature-grid">
-          <a class="feature-card" href="crops.html">
-            <span class="feature-icon" aria-hidden="true">01</span>
-            <h3>Crop information</h3>
-            <p>Review crop seasons, soil, water requirements, pests, diseases and growing timelines.</p>
-            <span class="text-link">Browse crop guide <span aria-hidden="true">&rarr;</span></span>
-          </a>
-          <a class="feature-card" href="calculator.html">
-            <span class="feature-icon" aria-hidden="true">02</span>
-            <h3>Fertilizer &amp; manpower</h3>
-            <p>Estimate NPK quantities, labour and input expenses using the selected crop data.</p>
-            <span class="text-link">Open calculator <span aria-hidden="true">&rarr;</span></span>
-          </a>
-          <a class="feature-card" href="soil-checker.html">
-            <span class="feature-icon" aria-hidden="true">03</span>
-            <h3>Soil suitability</h3>
-            <p>Filter the crop guide by soil type and season and see the available suitability scores.</p>
-            <span class="text-link">Check soil fit <span aria-hidden="true">&rarr;</span></span>
-          </a>
-          <a class="feature-card" href="season-planner.html">
-            <span class="feature-icon" aria-hidden="true">04</span>
-            <h3>Season planner</h3>
-            <p>See sowing, irrigation, fertilizer and harvest notes in one crop-by-crop timeline.</p>
-            <span class="text-link">Plan a season <span aria-hidden="true">&rarr;</span></span>
-          </a>
-          <a class="feature-card" href="crop-comparison.html">
-            <span class="feature-icon" aria-hidden="true">05</span>
-            <h3>Crop comparison</h3>
-            <p>Compare two crops side by side, including their photographs and existing input data.</p>
-            <span class="text-link">Compare crops <span aria-hidden="true">&rarr;</span></span>
-          </a>
-          <a class="feature-card" href="farming-tools.html">
-            <span class="feature-icon" aria-hidden="true">06</span>
-            <h3>Farming tools &amp; notes</h3>
-            <p>Reach the available planning tools and review practical notes already in the crop data.</p>
-            <span class="text-link">Explore tools <span aria-hidden="true">&rarr;</span></span>
-          </a>
-        </div>
-      </section>
+      <div class="inline-controls">
+        <label>Soil Type:
+          <select id="soilTypeSelect">
+            <option value="">Select soil type</option>
+            <option value="Loamy">Loamy</option>
+            <option value="Sandy">Sandy</option>
+            <option value="Sandy Loam">Sandy Loam</option>
+            <option value="Clayey">Clayey</option>
+            <option value="Well-drained Loamy">Well-drained Loamy</option>
+</select>
+        </label>
 
-      <aside class="notice">AgroGuide Pro is an educational project. Crop estimates and guidance are based on its demonstration dataset and are not a substitute for local agricultural advice.</aside>
-    </div>
+        <label>Season:
+          <select id="soilSeasonSelect">
+            <option value="">Select season</option>
+            <option value="kharif">Kharif</option>
+            <option value="rabi">Rabi</option>
+            <option value="zaid">Zaid</option>
+          </select>
+        </label>
+
+        <button class="btn" id="soilCheckBtn">Check Suitable Crops</button>
+      </div>
+
+      <div id="soilResult" class="grid" style="margin-top:16px;"></div>
+    </section>
+
+    <!-- SEASON PLANNER -->
+    <section id="season" class="section">
+      <h2>Season Planner</h2>
+      <p class="muted">Filter crops by season to plan sowing and harvest schedule.</p>
+
+      <label>Select Season:
+        <select id="seasonSelect">
+          <option value="all">All</option>
+          <option value="kharif">Kharif</option>
+<option value="rabi">Rabi</option>
+          <option value="zaid">Zaid</option>
+        </select>
+      </label>
+
+      <div id="seasonGrid" class="grid" style="margin-top:12px;"></div>
+    </section>
+
+    <!-- COMPARE TOOL -->
+    <section id="compare" class="section">
+      <h2>Crop Comparison Tool</h2>
+
+      <div class="compare-controls">
+        <label>Select Crop 1:
+          <select id="compare1"></select>
+        </label>
+
+        <label>Select Crop 2:
+          <select id="compare2"></select>
+        </label>
+
+        <button class="btn" id="compareBtn">Compare</button>
+      </div>
+
+      <div id="comparisonResult" style="margin-top:12px;"></div>
+    </section>
+<!-- TOOLS (other modules & placeholders) -->
+    <section id="tools" class="section">
+      <h2>Other Tools & Future Modules</h2>
+      <ul>
+        <li>Pest & Disease Guide (per crop)</li>
+        <li>Water Requirement Estimator</li>
+        <li>Farming Timeline Generator (visual)</li>
+        <li>Offline Rule-based FAQ Chat</li>
+        <li>Admin Panel for crop data (JSON or backend)</li>
+      </ul>
+    </section>
+
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-main">
-      <div class="footer-brand">
-        <a class="brand" href="index.html" aria-label="AgroGuide Pro home">
-          <span class="brand-mark" aria-hidden="true">AG</span>
-          <span class="brand-copy">
-            <span class="brand-name">AgroGuide <span>Pro</span></span>
-            <span class="brand-tagline">Smart agriculture portal</span>
-          </span>
-        </a>
-        <p>A student project bringing crop information and farm-planning tools together in a responsive portal.</p>
-      </div>
-      <div class="footer-col">
-        <h2>Explore</h2>
-        <div class="footer-links">
-          <a href="crops.html">Crop guide</a>
-          <a href="calculator.html">Calculator</a>
-          <a href="soil-checker.html">Soil checker</a>
-          <a href="season-planner.html">Season planner</a>
-          <a href="crop-comparison.html">Compare crops</a>
-          <a href="farming-tools.html">Farming tools</a>
-        </div>
-      </div>
-      <div class="footer-col">
-        <h2>About this project</h2>
-        <p>Built by Priyansu Kumar Soni, Harsh Kumar and Arun Kushwaha as a BCA final-year minor project.</p>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <div class="container">
-        <p>AgroGuide Pro &copy; <span data-current-year>2026</span></p>
-        <p>Demonstration information only; confirm decisions with local agricultural experts.</p>
-      </div>
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>AgroGuide Pro © 2025 — Built for smarter farming.</p>
+      <p class="muted">Made by: Priyansu Kumar Soni, Harsh Kumar, Arun Kushwaha — BCA Final Year
+Minor Project</p>
     </div>
   </footer>
 
-  <div class="modal" id="cropModal" aria-hidden="true">
-    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalHeading">
-      <button class="modal-close" id="modalClose" type="button" aria-label="Close crop details">&times;</button>
-      <div id="modalBody"></div>
+  <!-- Crop Details Modal (placed at end to avoid layout shift) -->
+  <div id="cropModal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="close-btn" onclick="closeCropDetails()" aria-label="Close">&times;</button>
+<div id="modalBody"></div>
     </div>
   </div>
+
+  <!-- Main JS -->
+  <script src="script.js"></script>
+
+  <!-- Small inline helper for accessibility (optional) -->
+  <script>
+    // ensure keyboard accessibility for modal close
+    document.addEventListener('keydown', function(e) {
+      if (e.key === "Escape") {
+        const modal = document.getElementById('cropModal');
+        if (modal && modal.style.display === 'flex') closeCropDetails();
+      }
+    });
+  </script>
 </body>
 </html>

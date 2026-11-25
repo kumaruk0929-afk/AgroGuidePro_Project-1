@@ -11,7 +11,7 @@
     "yieldPerAcre": "22–27 quintals",
     "waterRequirement": "High (Requires standing water)",
     "soilScore": 9,
-    "image": "images/rice.jpg",
+    "image": "images/rice.png",
     "pests": [
       "Stem Borer",
       "Leaf Folder",
@@ -42,7 +42,7 @@
     "yieldPerAcre": "18–22 quintals",
     "waterRequirement": "Medium (4–5 irrigations)",
     "soilScore": 8,
-    "image": "images/wheat.jpg",
+    "image": "images/wheat.png",
     "pests": [
       "Aphids",
       "Termites"
@@ -71,7 +71,7 @@
     "yieldPerAcre": "18–25 quintals",
     "waterRequirement": "Moderate",
     "soilScore": 8,
-    "image": "images/maize.jpg",
+    "image": "images/maize.png",
     "pests": [
       "Stem Borer"
     ],
@@ -98,7 +98,7 @@
     "yieldPerAcre": "30–40 tons",
     "waterRequirement": "Very High",
     "soilScore": 7,
-    "image": "images/sugarcane.jpg",
+    "image": "images/sugarcane.png",
     "pests": [
       "Early Shoot Borer"
     ],
@@ -125,7 +125,7 @@
     "yieldPerAcre": "10–12 quintals",
     "waterRequirement": "Moderate",
     "soilScore": 9,
-    "image": "images/cotton.jpg",
+    "image": "images/cotton.png",
     "pests": [
       "Bollworm"
     ],
@@ -152,7 +152,7 @@
     "yieldPerAcre": "80–100 quintals",
     "waterRequirement": "Medium",
     "soilScore": 8,
-    "image": "images/potato.jpg",
+    "image": "images/potato.png",
     "pests": [
       "Cutworm"
     ],
@@ -179,7 +179,7 @@
     "yieldPerAcre": "80–120 quintals",
     "waterRequirement": "Medium",
     "soilScore": 8,
-    "image": "images/tomato.jpg",
+    "image": "images/tomato.png",
     "pests": [
       "Fruit Borer"
     ],
@@ -206,7 +206,7 @@
     "yieldPerAcre": "8–10 quintals",
     "waterRequirement": "Low",
     "soilScore": 8,
-    "image": "images/soybean.jpg",
+    "image": "images/soybean.png",
     "pests": [
       "Girdle Beetle"
     ],
@@ -233,7 +233,7 @@
     "yieldPerAcre": "6–10 quintals",
     "waterRequirement": "Low",
     "soilScore": 7,
-    "image": "images/groundnut.jpg",
+    "image": "images/groundnut.png",
     "pests": [
       "Leaf Miner"
     ],
@@ -260,7 +260,7 @@
     "yieldPerAcre": "15–20 tons",
     "waterRequirement": "High",
     "soilScore": 9,
-    "image": "images/banana.jpg",
+    "image": "images/banana.png",
     "pests": [
       "Rhizome Weevil"
     ],
